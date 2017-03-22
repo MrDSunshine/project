@@ -1,2 +1,66 @@
+$navbar-default-bg: #FFFF00;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+	float: left;
+	font-size: 1.7em;
+	color: #800000;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+#logo:hover {
+	color:#800000;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: asset-url('Social-Chimp-3-Image.png');
+	background-size: cover;
+	height: 500px;
+}
+
+.jumbotron h1 {
+	color:#FFFF00;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+.btn-xlarge {
+	font-size: 1.7em;
+	background: black;
+}
+
+footer {
+	margin-top: 45;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #777;
+}
+
+footer a:hover {
+	color: #222;
+}
+
+footer small {
+	float: left;
+}
+
+footer ul {
+	float: right;
+	list-style: none;
+}
+
+footer ul li {
+	float: left;
+	margin-left: 15px;
+}
