@@ -1,1 +1,5 @@
 This is the repository for the first social chimp app
+
+This is Aaron Rai's Computing Project
+
+Development of a Prototype of an Enhanced Social Networking Site

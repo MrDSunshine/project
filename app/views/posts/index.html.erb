@@ -1,3 +1,13 @@
-<h1 align="center">Listing all posts</h1>
+<div class="page-header">
+  <h1>Current Posts</h1>
+</div>
 
-<%= render 'post', obj: @posts %>
+<div class="text-center">
+  <%= will_paginate %>
+</div>
+
+<%= render @posts %>
+
+<div class="text-center">
+  <%= will_paginate %>
+</div>

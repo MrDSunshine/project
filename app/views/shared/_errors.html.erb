@@ -1,13 +1,21 @@
-
- <% if target.errors.any? %>  
-	<div id="error_explanation">  
-		 <%= pluralize(target.errors.count, "error") %>   
-		<ul>
-			<!--note: here we are only printing the error message  
-				not the field name -->
-			<% target.errors.each do |field, msg| %>  
-				<li><%= msg %></li>  
-			<% end %>  
-		</ul>  
-    </div>  
-<% end %> 
+<% if object.errors.any? %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            <%= pluralize object.errors.count, 'error' %>
+            prevented the post from saving:
+          </h2>
+        </div>
+        <div class="panel-body">
+          <ol>
+            <% object.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

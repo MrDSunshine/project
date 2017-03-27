@@ -1,0 +1,22 @@
+<div class="page-header">
+  <h1>Current categories</h1>
+</div>
+
+<%= will_paginate class: 'text-center' %>
+
+<% @categories.each do |category| %>
+  <ul class="listing">
+    <div class="row">
+      <div class="well well-sm col-md-4 col-md-offset-4 text-center">
+        <li class="article-title">
+          <%= link_to category.name, category %>
+        </li>
+        <li>
+          <small><%= pluralize category.posts.count, 'posts' %></small>
+        </li>
+      </div>
+    </div>
+  </ul>
+<% end %>
+
+<%= will_paginate class: 'text-center' %>
